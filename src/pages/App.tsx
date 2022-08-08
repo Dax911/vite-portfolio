@@ -1,19 +1,22 @@
-import { useState } from 'react';
-import pentagon from './PolygonBl.svg';
-import './App.css';
+import NavBar from '../comps/NavBar';
+import pentagon from '../public/PolygonBl.svg';
+import '../styles/App.css';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
+        <NavBar />
         <div className="container">
           <div className="impact-header2">GO BUILD STUFF</div>
         </div>
 
+        <div className="container">
+          <div className="impact-header">Starting is the hardest part.</div>
+        </div>
+
         <img src={pentagon} className="App-logo" alt="logo" />
-      </header>
+      </div>
       <div className="container">
         <div className="centered">hello world</div>
       </div>
